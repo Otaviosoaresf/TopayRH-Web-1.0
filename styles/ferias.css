@@ -1,0 +1,102 @@
+.main__ferias {
+    gap: 1%;
+}
+
+.ferias {
+    background-color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-size: 0.8em;
+    color: var(--cor-terciaria);
+    margin: 3em;
+    padding: 2em;
+    display: flex;
+    width: auto;
+    
+}
+
+.ferias__linhas {
+    display: flex;
+    flex-direction: column;
+}
+
+.linhas__titulos {
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    width: 100vh;
+}
+
+.ferias__linhas-paragrafos {
+    padding-bottom: 0.5em;
+    padding-right: 2em;
+    border-bottom: 0.10em solid var(--cor-terciaria);
+}
+
+.ferias__linhas-infos {
+    display: flex;
+    padding-right: 5em;
+    padding-top: 1em;
+
+}
+
+.ferias__linhas-img {
+    padding-right: 0.5em;
+}
+
+.status {
+    padding: 1.7em 0;
+    padding-right: 5em;
+}
+
+.admissao {
+    padding: 1.7em 0;
+    padding-right: 5em;
+}
+
+.ausencia {
+    padding: 1.7em 0;
+    padding-right: 5em;
+}
+
+.deduzido {
+    padding: 1.7em 0;
+    padding-right: 5em;
+}
+
+.observacao {
+    padding-left: 1em;
+}
+
+.ferias__linhas-funcionario {
+    list-style-type: none;
+}
+
+.ferias__linhas-nome {
+    padding-bottom: 0.7em;
+}
+
+.ferias__linhas-cargo {
+    font-size: 0.8em;
+    color: var(--cinza-claro);
+}
+
+.ferias__observacao {
+    align-items: center;
+    border: 0.10em solid var(--cinza-claro);
+    margin: 0.6em;
+    font-size: 0.8em;
+    text-align: center;
+    word-break: break-word;
+    width: 20vh;
+    padding: 0.25em 0;
+    padding-left: 1em;
+}
+
+@media screen and (min-width: 1400px) {
+
+    .main__ferias {
+        gap: 10%;
+    }
+
+
+}

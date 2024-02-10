@@ -1,0 +1,159 @@
+.main-horas {
+    gap: 10%;
+}
+
+.funcionalidades__horas {
+    margin-top: 4em;
+    margin-bottom: 2.5em;
+    padding: 2em 0.5em;
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    display: flex;
+    flex-direction: column;
+}
+
+.horas__titulo {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+    font-size: 1.5em;
+}
+
+.horas__titulo-secundario {
+    padding-top: 1.5em;
+    font-size: 1.17em;
+    color: var(--cinza-claro);
+    font-weight: 600;
+}
+
+.horas__funcionario {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em;
+    padding-bottom: 1.5em;
+    border-bottom: 0.10em solid var(--cor-terciaria);
+}
+
+.horas__descrição {
+    color: var(--azul-escuro);
+    font-size: 1.17em;
+    font-weight: 600;
+    margin: 0.20em;
+}
+
+.horas__titulo-mes {
+    color: var(--cinza-claro);
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 1.5em;
+}
+
+.horas__dados, .dados-lista {
+    display: flex;
+    padding: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.horas__dados {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.dados-lista {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.horas__main-link {
+    text-decoration: none;
+    color: var(--azul-escuro);
+    border: 0.10em solid var(--cor-primaria);
+    border-radius: 1em;
+    padding: 0.40em;
+}
+
+.horas__main-link:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.dados__linha {
+    padding: 0.25em 0.5em;
+    list-style-type: none;
+    background-color: var(--azul-escuro);
+    color: var(--cor-secundaria);
+    
+}
+
+.semana__listas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.lista__titulo, .lista__item {
+    list-style-type: none;
+}
+
+.lista__titulo {
+    margin-right: 1em;
+}
+
+.lista__item {
+    margin: 1em;
+    border: 0.05em solid var(--cor-primaria);
+    border-radius: 0.50em;
+}
+
+.dados__linha-link {
+    text-decoration: none;
+    color: var(--azul-escuro);
+    margin: 1em;
+    padding: 0.20em;
+    border: 0.05em solid var(--azul-escuro);
+    list-style-type: none;
+    border-radius: 7em;
+    cursor: pointer;
+}
+
+.dados__linha-link:hover {
+    color: var(--cor-secundaria);
+    background-color: var(--azul-escuro);
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .funcionalidades__horas {
+        margin: 0.5em
+    }
+
+    .semana__listas {
+        font-size: 0.9em;
+    }
+
+    .dados__linha-link {
+        font-size: 0.8em;
+        margin: 0.7em
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+    .main-horas {
+        gap: 15%
+    }
+
+    .funcionalidades__horas {
+        padding: 2em 5em;
+    }
+
+    
+}

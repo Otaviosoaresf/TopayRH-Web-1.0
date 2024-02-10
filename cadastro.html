@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELA CADASTRO ToPay RH</title>
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <img src="./Img/logotopay-preto.png" alt="ToPayRH" class="logo">
+    <div class="wrapper">
+        <form id="registrationForm">
+            <h1> Cadastro </h1>
+            <div class="input-box">
+                <input type="text" placeholder="Nome" id="username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Email" id="email" required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Senha" id="password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <button type="button" class="btn" onclick="registerUser()">Cadastrar</button>
+            <div class="register-link">
+                <p>Já tem uma conta? <a href="./index.html">Faça login</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="./scripts/login.js"></script>
+    <script src="./scripts/cadastro.js"></script>
+</body>
+
+</html>

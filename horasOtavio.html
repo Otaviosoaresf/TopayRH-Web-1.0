@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopayRH</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/horasmain.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+</head>
+<body>
+    <header class="cabecalho">
+            <img class="cabecalho__imagem" src="./Img/Logotopay.png">
+            <div class="cabecalho__texto">
+                <h1 class="cabecalho__texto-titulo">Área do funcionário - Apontamento de horas</h1>
+                <p class="cabecalho__texto-paragrafo">Login RH - Apontamento de horas</p>
+            </div>
+            <div class="container__sair">
+                <div class="cabecalho__usuario">
+                    <img src="./Img/🦆 icon _Person_.png">
+                    <h2 class="cabecalho__usuario-nome">Caio Melo</h2>
+                    <p class="cabecalho__usuario-setor">Recursos Humanos</p>
+                </div> 
+                
+                <div class="cabecalho__sair">
+                    <a href="./index.html"><img src="./Img/icons8-esquerda-67 1.png"></a>
+                    <p class="cabecalho__sair-paragrafo">Sair</p>
+                </div>
+            </div>       
+    </header>
+
+    <main class="main main-horas">
+        
+        <section class="section__links">
+            <nav class="nav__links">
+                <a href="./horasmain.html" class="nav__links__link">Apontamento de horas</a>
+                <a href="./relatorioFerias.html" class="nav__links__link link__relatorio-ferias">Relatorio de ferias</a>
+            </nav>
+        </section>
+
+        <section class="funcionalidades__horas">
+            <h2 class="horas__titulo">Registro de horas trabalhadas</h2>
+            <ul class="horas__funcionario">
+                <li class="horas__descrição">
+                    Funcionário: Otávio Soares
+                </li>
+                <li class="horas__descrição">
+                    Cargo: Analista de Sistemas
+                </li>
+                <li class="horas__descrição">
+                    Setor: TI
+                </li>
+                <li class="horas__descrição">
+                    Horário: das 08:00 as 17:00
+                </li>
+            </ul>
+
+            <div class="horas__funcionario">
+                <ul class="horas__dados dados-lista">
+                    <li class="dados__linha">Mês:</li>
+                    <li class="dados__linha-mes">
+                        <p class="dados__linha-link" id="btn__novembro">Novembro</p>
+                    </li>
+                    <li class="dados__linha-mes">
+                        <p class="dados__linha-link" id="btn__dezembro">Dezembro</p>
+                    </li>
+                </ul>
+
+
+                
+
+                <ul class="horas__dados dados-lista hidden" id="semanas__novembro">
+                    <li class="dados__linha">Semana</li>
+                    <li class="dados__linha-semana">
+                        <p class="dados__linha-link" id="semana1__novembro" data-contexto="botoes__semanas">06/10</p>  
+                    </li>
+                    <li class="dados__linha-semana">
+                        <p class="dados__linha-link" id="semana2__novembro" data-contexto="botoes__semanas">13/17</p>
+                    </li>
+                    <li>
+                        <p class="dados__linha-link" id="semana3__novembro" data-contexto="botoes__semanas">20/24</p>
+                    </li>
+                    <li>
+                        <p class="dados__linha-link" id="semana4__novembro" data-contexto="botoes__semanas">27/01</p>
+                    </li>
+                </ul>
+
+                <ul class="horas__dados dados-lista hidden" id="semanas__dezembro">
+                    <li class="dados__linha">Semana</li>
+                    <li class="dados__linha-semana">
+                        <p class="dados__linha-link" id="semana1__dezembro" data-contexto="botoes__semanas">04/08</p>
+                    </li>
+                    <li class="dados__linha-semana">
+                        <p class="dados__linha-link" id="semana2__dezembro" data-contexto="botoes__semanas">11/15</p>
+                    </li>
+                    <li>
+                        <p class="dados__linha-link" id="semana3__dezembro" data-contexto="botoes__semanas">18/22</p>
+                    </li>
+                    <li>
+                        <p class="dados__linha-link" id="semana4__dezembro" data-contexto="botoes__semanas">25/29</p>
+                    </li>
+                </ul>
+            </div>
+
+            <section class="semana__1 hidden" id="semana1__novembro" data-contexto="semanas">
+                <div class="semana__listas">
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">06/nov</li>
+                        <li class="lista__titulo">Segunda-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:00</li>
+                        <li class="lista__item">13:00</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">07/nov</li>
+                        <li class="lista__titulo">Terça-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:30</li>
+                        <li class="lista__item">13:30</li>
+                        <li class="lista__item">17:05</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">08/nov</li>
+                        <li class="lista__titulo">Quarta-feira</li>
+                        <li class="lista__item">08:02</li>
+                        <li class="lista__item">12:15</li>
+                        <li class="lista__item">13:10</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">09/nov</li>
+                        <li class="lista__titulo">Quinta-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:10</li>
+                        <li class="lista__item">13:10</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">10/nov</li>
+                        <li class="lista__titulo">Sexta-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:05</li>
+                        <li class="lista__item">13:04</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="semana__2 hidden" id="semana2__novembro" data-contexto="semanas">
+                <div class="semana__listas">
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">13/nov</li>
+                        <li class="lista__titulo">Segunda-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:03</li>
+                        <li class="lista__item">13:03</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">14/nov</li>
+                        <li class="lista__titulo">Terça-feira</li>
+                        <li class="lista__item">08:02</li>
+                        <li class="lista__item">12:00</li>
+                        <li class="lista__item">13:00</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">15/nov</li>
+                        <li class="lista__titulo">Quarta-feira</li>
+                        <li class="lista__item">Feriado</li>
+                        <li class="lista__item">Feriado</li>
+                        <li class="lista__item">Feriado</li>
+                        <li class="lista__item">Feriado</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">16/nov</li>
+                        <li class="lista__titulo">Quinta-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:12</li>
+                        <li class="lista__item">13:12</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">17/nov</li>
+                        <li class="lista__titulo">Sexta-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:00</li>
+                        <li class="lista__item">13:00</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="semana__3 hidden" id="semana3__novembro" data-contexto="semanas">
+                
+                <div class="semana__listas">
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">20/nov</li>
+                        <li class="lista__titulo">Segunda-feira</li>
+                        <li class="lista__item">Feriado</li>
+                        <li class="lista__item">Feriado</li>
+                        <li class="lista__item">Feriado</li>
+                        <li class="lista__item">Feriado</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">21/nov</li>
+                        <li class="lista__titulo">Terça-feira</li>
+                        <li class="lista__item">08:05</li>
+                        <li class="lista__item">12:05</li>
+                        <li class="lista__item">13:05</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">22/nov</li>
+                        <li class="lista__titulo">Quarta-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:37</li>
+                        <li class="lista__item">13:37</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">23/nov</li>
+                        <li class="lista__titulo">Quinta-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:00</li>
+                        <li class="lista__item">13:00</li>
+                        <li class="lista__item">17:03</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">24/nov</li>
+                        <li class="lista__titulo">Sexta-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:05</li>
+                        <li class="lista__item">13:06</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="semana__4 hidden" id="semana4__novembro" data-contexto="semanas">
+                
+                <div class="semana__listas">
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">27/nov</li>
+                        <li class="lista__titulo">Segunda-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:08</li>
+                        <li class="lista__item">13:08</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">28/nov</li>
+                        <li class="lista__titulo">Terça-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:21</li>
+                        <li class="lista__item">13:21</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">29/nov</li>
+                        <li class="lista__titulo">Quarta-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:03</li>
+                        <li class="lista__item">13:02</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">30/nov</li>
+                        <li class="lista__titulo">Quinta-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:19</li>
+                        <li class="lista__item">13:19</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">01/dez</li>
+                        <li class="lista__titulo">Sexta-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:45</li>
+                        <li class="lista__item">13:45</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                </div>
+            </section>
+
+            
+
+            <section class="semana__1 hidden" id="semana1__dezembro" data-contexto="semanas">
+                <div class="semana__listas">
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">04/dez</li>
+                        <li class="lista__titulo">Segunda-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:00</li>
+                        <li class="lista__item">13:00</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">05/dez</li>
+                        <li class="lista__titulo">Terça-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:30</li>
+                        <li class="lista__item">13:31</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">06/dez</li>
+                        <li class="lista__titulo">Quarta-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:11</li>
+                        <li class="lista__item">13:11</li>
+                        <li class="lista__item">17:01</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">07/dez</li>
+                        <li class="lista__titulo">Quinta-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:07</li>
+                        <li class="lista__item">13:07</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">08/dez</li>
+                        <li class="lista__titulo">Sexta-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:00</li>
+                        <li class="lista__item">13:00</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="semana__2 hidden" id="semana2__dezembro" data-contexto="semanas">
+                <div class="semana__listas">
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">11/dez</li>
+                        <li class="lista__titulo">Segunda-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:01</li>
+                        <li class="lista__item">13:01</li>
+                        <li class="lista__item">17:01</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">12/dez</li>
+                        <li class="lista__titulo">Terça-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:37</li>
+                        <li class="lista__item">13:37</li>
+                        <li class="lista__item">17:05</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">13/dez</li>
+                        <li class="lista__titulo">Quarta-feira</li>
+                        <li class="lista__item">08:01</li>
+                        <li class="lista__item">12:16</li>
+                        <li class="lista__item">13:16</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">14/dez</li>
+                        <li class="lista__titulo">Quinta-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:00</li>
+                        <li class="lista__item">13:00</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">15/dez</li>
+                        <li class="lista__titulo">Sexta-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:00</li>
+                        <li class="lista__item">13:01</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="semana__3 hidden" id="semana3__dezembro" data-contexto="semanas">
+                <div class="semana__listas">
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">18/dez</li>
+                        <li class="lista__titulo">Segunda-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:02</li>
+                        <li class="lista__item">13:03</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">19/dez</li>
+                        <li class="lista__titulo">Terça-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:09</li>
+                        <li class="lista__item">13:09</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">20/dez</li>
+                        <li class="lista__titulo">Quarta-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:15</li>
+                        <li class="lista__item">13:14</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">21/dez</li>
+                        <li class="lista__titulo">Quinta-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:00</li>
+                        <li class="lista__item">13:00</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">22/dez</li>
+                        <li class="lista__titulo">Sexta-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:00</li>
+                        <li class="lista__item">13:00</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="semana__4 hidden" id="semana4__dezembro" data-contexto="semanas">
+                <div class="semana__listas">
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">25/dez</li>
+                        <li class="lista__titulo">Segunda-feira</li>
+                        <li class="lista__item">Feriado</li>
+                        <li class="lista__item">Feriado</li>
+                        <li class="lista__item">Feriado</li>
+                        <li class="lista__item">Feriado</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">26/dez</li>
+                        <li class="lista__titulo">Terça-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:22</li>
+                        <li class="lista__item">13:23</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">27/dez</li>
+                        <li class="lista__titulo">Quarta-feira</li>
+                        <li class="lista__item">08:01</li>
+                        <li class="lista__item">12:17</li>
+                        <li class="lista__item">13:17</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">28/dez</li>
+                        <li class="lista__titulo">Quinta-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:01</li>
+                        <li class="lista__item">13:00</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                    <ul class="lista__dias">
+                        <li class="lista__titulo">29/dez</li>
+                        <li class="lista__titulo">Sexta-feira</li>
+                        <li class="lista__item">08:00</li>
+                        <li class="lista__item">12:40</li>
+                        <li class="lista__item">13:40</li>
+                        <li class="lista__item">17:00</li>
+                    </ul>
+                </div>
+            </section>
+                            
+        </section>
+        
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="./scripts/horasmain.js"></script>
+</body>
+</html>

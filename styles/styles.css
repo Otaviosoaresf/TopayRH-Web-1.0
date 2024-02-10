@@ -1,0 +1,129 @@
+
+:root {
+    --cor-primaria: #22D4FD;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #000000;
+    --cinza-claro: #959090;
+    --azul-escuro: #00526C;
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+}
+
+
+.main {
+    display: flex;
+    justify-content:  center;
+    justify-content: flex-start;
+    gap: 10%;
+}
+
+.section__links {
+    display: flex;
+    background-color: var(--cor-secundaria);
+    margin: 1% 0% 3% 5%;
+    
+}
+
+.nav__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.nav__links__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 18px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    border: 2px solid var(--cor-primaria);
+    padding: 1em 0.5em;
+    border-radius: 1em;
+    margin: 3em 0.5em;
+    text-decoration: none;
+
+}
+
+.nav__links__link:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.funcionalidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 0%;
+       
+}
+
+.funcionalidades__titulos {
+    padding-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--cor-primaria);
+    text-align: center;
+    
+}
+
+.funcionalidades__titulo1 {
+    font-family: var(--fonte-primaria);
+    font-size: 48px;
+    color: var(--cor-terciaria);
+
+}
+
+.funcionalidades__titulo2 {
+    padding-top: 1em;
+    font-family: var(--fonte-secundaria);
+    font-size: 25px;
+    color: var(--cinza-claro);
+}
+
+
+
+.funcionalidades__logo {
+    width: 100%;
+    
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        flex-direction: column-reverse;
+    }
+
+    .funcionalidades__titulo2 {
+        display: none;
+    }
+
+    .section__links {
+        margin: 2em;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .link__relatorio-ferias {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .main {
+        gap: 20%
+    }
+
+    
+}
